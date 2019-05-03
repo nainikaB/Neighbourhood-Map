@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+body {
+  overflow: hidden;
+  font-family: 'Roboto Slab', serif;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+}
+html, body, #root, .App {
+  height: 100vh;
+}
+.App {
+  text-align: center;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

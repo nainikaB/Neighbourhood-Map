@@ -1,0 +1,81 @@
+nav {
+  background: #f49b42;
+  border-bottom: 4px solid #333333;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+}
+
+nav .nav-drawer {
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70px;
+}
+
+nav .nav-drawer a {
+  color: #000000;
+  font-size: 0.85em;
+  vertical-align: middle;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 25px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 50%;
+  opacity: 0.85;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+nav .nav-drawer a i {
+  width: 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+nav .nav-drawer a:hover {
+  background: #dddddd;
+  -webkit-box-shadow: 0 0 2px 2px #000000, 0 0 1px 1px #000000 inset;
+          box-shadow: 0 0 2px 2px #000000, 0 0 1px 1px #000000 inset;
+  opacity: 1;
+}
+
+nav .nav-drawer a:focus {
+  opacity: 1;
+  outline: 0;
+}
+
+nav .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 87vw;
+}
+
+nav .heading h1 {
+  color: #1c262f;
+  margin: auto;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 380px) {
+  nav .nav-drawer a {
+    font-size: 0.65em;
+  }
+  nav .heading h1 {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

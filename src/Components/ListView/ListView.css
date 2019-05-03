@@ -1,0 +1,87 @@
+.list-view {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 300px;
+  border-right: 5px solid #111111;
+  position: absolute;
+  -webkit-transform: translate(-300px, 0);
+          transform: translate(-300px, 0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  height: 100%;
+  z-index: 10;
+  background: #111111;
+}
+
+.list-view .location-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.list-view .location-search input {
+  width: 100%;
+  height: 2em;
+  padding-left: 20px;
+  font-size: 1.1em;
+}
+
+.list-view .location-search label {
+  position: absolute;
+  padding-left: 30px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  top: 30px;
+  font-size: 1.1em;
+}
+
+.list-view .location-search input:focus ~ label {
+  color: white;
+  -webkit-transform: translateY(-28px);
+          transform: translateY(-28px);
+  font-size: 0.75em;
+}
+
+.list-view .list-render {
+  margin-top: 20px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.list-view .list-render .list {
+  padding: 10px;
+  text-align: center;
+}
+
+.list-view .list-render .list:hover,
+.list-view .list-render .list:focus {
+  background: #f49b42;
+  cursor: pointer;
+  color: #111111;
+  text-shadow: 0 0 1px black;
+  outline: 0;
+}
+
+.list-view .location-name {
+  position: absolute;
+  bottom: 65px;
+  background: white;
+  width: 100%;
+  background: #dddddd;
+  height: 65px;
+}
+
+.open {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+@media screen and (max-width: 480px) {
+  .list-view {
+    width: 220px;
+  }
+}
+/*# sourceMappingURL=ListView.css.map */
